@@ -27,7 +27,7 @@ const Card = () => {
       <div className="card">
         <img className="img" src={user?.picture?.large} alt="" />
         <p className="full-name">
-          {user?.title}
+          {user?.name?.title}
           {user?.name?.first}
           {user?.name?.last}
         </p>
@@ -52,15 +52,16 @@ const Card = () => {
       <div>
         <p className="userAge">Age:{user?.registered?.age}</p>
         <p className="userRegisterDate">
-          Register Date:{user?.registered?.date}
+          Register Date:{user?.registered?.date.slice(0,10)}
         </p>
       </div>
-      <div>
+     
+    </div>
+    <div>
         <button className="button" onClick={randomUser}>
           Random User
         </button>
       </div>
-    </div>
     </div>
   );
 };
