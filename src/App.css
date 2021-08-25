@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* .email{
+
+}
+
+.location{
+
+}
+.phone{
+
+} */
+.container{
+  background-color:pink;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: rgb(3, 3, 3);
+
+
+}
+
+.card{
+  height:100%;
+  width:200px;
+  margin:auto;
+  
+
+
+}
