@@ -3,34 +3,76 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* .email{
-
-}
-
-.location{
-
-}
-.phone{
-
-} */
-.container{
-  background-color:pink;
-  min-height: 100vh;
+.App{
+  background-color:gray;
+   min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
   font-size: 1.3rem;
-  color: rgb(3, 3, 3);
+
+  
+
+
+}
+.email,
+.location,
+.phone
+{
+  display: flex;
+  width: 80%;
+  margin-right:20rem;
+  margin-top:-5rem;
+  margin-bottom:10rem;
+
+}
+
+
+.container{
+  /* min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  font-size: 1.3rem;
 
 
 }
 
 .card{
   height:100%;
-  width:200px;
-  margin:auto;
-  
+  background:rgb(22, 162, 197);
+  margin-top: 100px;
+  padding: 2px 16px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
 
+}
+.img{
+  border-radius:50%;
+  width:100px;
+  height:100px;
+}
 
+.button{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(194, 207, 7);
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2) ;
+
+}
+.button:hover{
+  background-color:palegreen;
 }

@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Email from '../svg/Email';
+import Location from '../svg/Location';
+import Phone from '../svg/Phone';
 
 
 
@@ -30,20 +33,26 @@ const Card = () => {
         </p>
       
       <div className="userEmail">
+      <Email className="email"/>
+
+
         <p>{user.email}</p>
       </div>
       <div className="userPhone">
+      <Phone className="phone"/>
+          
         <p>{user.phone}</p>
       </div>
       <div className="userLocation">
+      <Location className="location"/>
         <p>
           {user?.location?.city} {user?.location?.country}
         </p>
       </div>
       <div>
-        <p className="userAge">Age:{user.age}</p>
+        <p className="userAge">Age:{user?.registered?.age}</p>
         <p className="userRegisterDate">
-          Register Date:{user?.registered?.date}{" "}
+          Register Date:{user?.registered?.date}
         </p>
       </div>
       <div>
