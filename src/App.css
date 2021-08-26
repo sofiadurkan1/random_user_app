@@ -34,25 +34,19 @@
 .userEmail,
 .userPhone,
 .userLocation{
-  display: grid;
-  grid-row: 2;
-  /* grid-gap:50px 100px; */
-  padding:5px;
-  margin:10px auto ;
-
-
-
+  display: flex;
+  margin-top: 50px;;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 
-
 .card{
-  height:100%;
-  background:rgb(22, 162, 197);
-  margin-top: 100px;
+  height:80%;
+  background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  margin-top: 100px;
   padding: 20px 20px;
-  box-shadow:10px 10px rgba(6, 33, 92, 0.2);
-  width: 100%;
+  box-shadow: 0 5px 10px 10px rgba(1, 73, 206, 0.2);
+  width: 120%;
   border-radius: 10px;
   text-align: center;
 
@@ -77,6 +71,7 @@
   margin-left: 15rem;
 
 }
+  
 
 
 
@@ -86,19 +81,19 @@
   display: inline-block;
   padding: 10px;
   color: white;
-  background-color: rgb(155, 26, 167);
+  background-color: rgb(27, 4, 233);
   text-align: center;
   cursor: pointer;
   width: 20%;
   font-size: 1.3rem;
   border-radius: 5px;
-  box-shadow: 0 6px 10px 0 rgba(27, 1, 25, 0.2) ;
+  box-shadow: 0 6px 10px 0 rgba(54, 5, 230, 0.2) ;
   position: absolute;
   margin: 5px;
-  left: 40%;
+  left: 45%;
   
 
 }
 .button:hover{
-  background-color:palegreen;
+  background-color:rgb(74, 221, 74);
 }
