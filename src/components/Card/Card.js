@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Email from '../svg/Email';
-import Location from '../svg/Location';
-import Phone from '../svg/Phone';
-
-
+import Email from "../svg/Email";
+import Location from "../svg/Location";
+import Phone from "../svg/Phone";
 
 const Card = () => {
   const [user, setUser] = useState([]);
@@ -25,39 +23,38 @@ const Card = () => {
   return (
     <div className="container">
       <div className="card">
-        <img className="img" src={user?.picture?.large} alt="" />
-        <p className="full-name">
-          {user?.name?.title}
-          {user?.name?.first}
-          {user?.name?.last}
-        </p>
-      
-      <div className="userEmail">
-      <Email className="email"/>
+        <div className="first-box">
+          <img className="img" src={user?.picture?.large} alt="" />
+          <p className="info">
+            {user?.name?.title}
+            {user?.name?.first}
+            {user?.name?.last}
+          </p>
+        </div>
+        <div className="user-email">
+          <Email className="img" />
 
+          <p className="info">{user.email}</p>
+        </div>
+        <div className="user-phone">
+          <Phone className="img" />
 
-        <p>{user.email}</p>
-      </div>
-      <div className="userPhone">
-      <Phone className="phone"/>
-          
-        <p>{user.phone}</p>
-      </div>
-      <div className="userLocation">
-      <Location className="location"/>
-        <p>
-          {user?.location?.city} {user?.location?.country}
-        </p>
+          <p className="info">{user.phone}</p>
+        </div>
+        <div className="user-location">
+          <Location className="img" />
+          <p className="info">
+            {user?.location?.city} {user?.location?.country}
+          </p>
+        </div>
+        <div className="user-register">
+          <p className="info">Age:{user?.registered?.age}</p>
+          <p className="info">
+            Register Date:{user?.registered?.date.slice(0, 10)}
+          </p>
+        </div>
       </div>
       <div>
-        <p className="userAge">Age:{user?.registered?.age}</p>
-        <p className="userRegisterDate">
-          Register Date:{user?.registered?.date.slice(0,10)}
-        </p>
-      </div>
-     
-    </div>
-    <div>
         <button className="button" onClick={randomUser}>
           Random User
         </button>

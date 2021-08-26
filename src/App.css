@@ -20,58 +20,62 @@
 .location,
 .phone
 {
-
-
-  display: grid;
-  grid-gap:50px 100px;
-  padding:5px;
-  margin:10px auto ;
+ display: flex;
 
 
 
 }
-
-.userEmail,
-.userPhone,
-.userLocation{
-  display: flex;
-  margin-top: 50px;;
-  justify-content: flex-start;
-  align-items: center;
+p{
+  display: flex-end;
 }
+
+
 
 
 .card{
-  height:80%;
+  height:500px;
   background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  margin-top: 100px;
   padding: 20px 20px;
-  box-shadow: 0 5px 10px 10px rgba(1, 73, 206, 0.2);
-  width: 120%;
+  box-shadow: 10px 10px rgba(1, 73, 206, 0.2),15px 15px rgba(111, 154, 235, 0.2);
+  width: 500px;
   border-radius: 10px;
   text-align: center;
 
 }
-.img{
-  flex:1;
-  border-radius:50%;
-  /* width:100px;
-  height:100px; */
+.user-email,
+.user-phone,
+.user-location{
+  display: flex;
   margin-top: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.first-box{
   display: flex;
   align-items: center;
-  width: 40%;
-  margin-left: -10px;
 
 }
-.full-name{
-  margin-top:-60px;
-  display: flex;
-  align-items: center;
-  width: 75%;
-  margin-left: 15rem;
 
-}
+
+.img{
   
+  border-radius:50%;
+  margin-top: 20px;
+  width: 20%;
+  display: flex-start;
+
+}
+ .full-name{
+  display: flex-end;
+
+}
+
+.info{
+  margin-left: 80px;
+}
+.user-register{
+  line-height:30px;
+}
 
 
 
@@ -90,10 +94,10 @@
   box-shadow: 0 6px 10px 0 rgba(54, 5, 230, 0.2) ;
   position: absolute;
   margin: 5px;
-  left: 45%;
+  left: 40%;
   
 
 }
 .button:hover{
-  background-color:rgb(74, 221, 74);
+  background-color:rgb(77, 74, 221);
 }
