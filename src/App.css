@@ -81,19 +81,17 @@ p{
 
 .button{
   border: none;
-  outline: 0;
   display: inline-block;
-  padding: 10px;
+  padding: 15px;
   color: white;
   background-color: rgb(27, 4, 233);
   text-align: center;
   cursor: pointer;
   width: 20%;
   font-size: 1.3rem;
-  border-radius: 5px;
-  box-shadow: 0 6px 10px 0 rgba(54, 5, 230, 0.2) ;
   position: absolute;
-  margin: 5px;
+  border-radius: 5px;
+  margin: 18px;
   left: 40%;
   
 
