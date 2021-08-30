@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .App {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: #fff;
+  }
+  .email,
+  .location,
+  .phone {
+    display: flex;
+  }
+  p {
+    display: flex-end;
+  }
+  
+  .card {
+    height: 500px;
+    background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
+    margin-top: 100px;
+    padding: 20px 20px;
+    box-shadow: 10px 10px rgba(1, 73, 206, 0.2),
+      15px 15px rgba(111, 154, 235, 0.2);
+    width: 500px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .user-email,
+  .user-phone,
+  .user-location {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .first-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .img {
+    border-radius: 50%;
+    margin-top: 20px;
+    width: 20%;
+    display: flex-start;
+  }
+  .full-name {
+    display: flex-end;
+  }
+  
+  .info {
+    margin-left: 80px;
+  }
+  .user-register {
+    line-height: 30px;
+  }
+  
+  .button {
+    border: none;
+    display: inline-block;
+    padding: 15px;
+    color: white;
+    background-color: rgb(27, 4, 233);
+    text-align: center;
+    cursor: pointer;
+    width: 20%;
+    font-size: 1.3rem;
+    position: absolute;
+    border-radius: 5px;
+    margin: 18px;
+    left: 40%;
+  }
+  .button:hover {
+    background-color: rgb(77, 74, 221);
+  }
+  
