@@ -15,7 +15,7 @@ const Card = () => {
     });
   }, [isLoaded]);
 
-  const randomUser = () => {
+  const getRandomUser = () => {
     // console.log(setIsLoaded(!isLoaded));
     setIsLoaded(!isLoaded);
   };
@@ -26,14 +26,11 @@ const Card = () => {
         <div className="first-box">
           <img className="img" src={user?.picture?.large} alt="" />
           <p className="info">
-            {user?.name?.title}
-            {user?.name?.first}
-            {user?.name?.last}
+            {user?.name?.title} {user?.name?.first} {user?.name?.last}
           </p>
         </div>
         <div className="user-email">
           <Email className="img" />
-
           <p className="info">{user.email}</p>
         </div>
         <div className="user-phone">
@@ -55,7 +52,7 @@ const Card = () => {
         </div>
       </div>
       <div>
-        <button className="button" onClick={randomUser}>
+        <button className="button" onClick={getRandomUser}>
           Random User
         </button>
       </div>
