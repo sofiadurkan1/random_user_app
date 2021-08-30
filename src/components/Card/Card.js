@@ -6,19 +6,24 @@ import Phone from "../svg/Phone";
 
 const Card = () => {
   const [user, setUser] = useState([]);
-  const [isLoaded, setIsLoaded] = useState(false);
+  useState(false)
 
-  useEffect(() => {
+ 
+  const getRandomUser = () => {
     axios.get("https://randomuser.me/api/").then((response) => {
       // console.log(response.data.results[0])
       setUser(response.data.results[0]);
     });
-  }, [isLoaded]);
-
-  const getRandomUser = () => {
-    // console.log(setIsLoaded(!isLoaded));
-    setIsLoaded(!isLoaded);
   };
+
+  useEffect(() => {
+    getRandomUser();
+    console.log(getRandomUser())
+   
+  },[]);
+
+   
+
 
   return (
     <div className="container">
@@ -41,7 +46,7 @@ const Card = () => {
         <div className="user-location">
           <Location className="img" />
           <p className="info">
-            {user?.location?.city} {user?.location?.country}
+            {user?.location?.city} / {user?.location?.country}
           </p>
         </div>
         <div className="user-register">

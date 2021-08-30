@@ -1,16 +1,10 @@
-import './App.css';
-import Card from "./components/Card/Card"
+import "./App.css";
+import Card from "./components/Card/Card";
 
-
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <Card/>
-      
-      
-
-      
-      
+      <Card />
     </div>
   );
 }
