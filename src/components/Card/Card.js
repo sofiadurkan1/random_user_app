@@ -10,7 +10,7 @@ const Card = () => {
 
   const getRandomUser = () => {
     axios.get("https://randomuser.me/api/").then((response) => {
-      console.log(response.data.results[0]);
+      // console.log(response.data.results[0]);
       // console.log(response.data)
 
       setUser(response.data.results[0]);
